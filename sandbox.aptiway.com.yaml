@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "sandbox.aptiway.com"
+  cluster:
+    server: "https://rancher.aptiway.com/k8s/clusters/c-m-7b6v9pvn"
+
+users:
+- name: "sandbox.aptiway.com"
+  user:
+    token: "kubeconfig-user-zqcn95fnd2:kp54wwf76xjwxnw5gm8pktlffggxb27ff6rzhlmhlsd9xvpzpq5dqf"
+
+
+contexts:
+- name: "sandbox.aptiway.com"
+  context:
+    user: "sandbox.aptiway.com"
+    cluster: "sandbox.aptiway.com"
+
+current-context: "sandbox.aptiway.com"

@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "mosip.sandbox.aptiway.com"
+  cluster:
+    server: "https://rancher.aptiway.com/k8s/clusters/c-m-6knm7rxv"
+
+users:
+- name: "mosip.sandbox.aptiway.com"
+  user:
+    token: "kubeconfig-user-h45jxv5zsj:qppcs5xqw97r6pjds5sx2j4hfvwpd4th4t29sczjxgct5dbmt7h8r5"
+
+
+contexts:
+- name: "mosip.sandbox.aptiway.com"
+  context:
+    user: "mosip.sandbox.aptiway.com"
+    cluster: "mosip.sandbox.aptiway.com"
+
+current-context: "mosip.sandbox.aptiway.com"
